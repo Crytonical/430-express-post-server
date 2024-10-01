@@ -18,3 +18,4 @@ const getQuoteById = (id) => quotes.find((e) => e.id === id) || {};
 module.exports = {
   getAllQuotes, recentQuote, randomQuote, getQuoteById,
 };
+
