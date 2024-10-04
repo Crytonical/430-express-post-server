@@ -187,7 +187,7 @@ singleHootForm.onsubmit = (evt) => {
 
 const singleHootCallback = (selector) => {
   const element = document.querySelector(selector);
-    return (json, status) => {np
+    return (json, status) => {
         element.innerHTML = `
         <div>
             <p><b>id:</b> ${json.id}</p>
