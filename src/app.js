@@ -8,10 +8,10 @@ const indexRouter = require('./routes/index.js');
 const quotesRouter = require('./routes/quotes.js');
 const apiRouter = require('./routes/api.js');
 
-
 const app = express();
 
 app.use(express.static('client'));
+app.use(express.json());
 app.use('/', indexRouter);
 app.use('/quotes', quotesRouter);
 app.use('/api', apiRouter);
